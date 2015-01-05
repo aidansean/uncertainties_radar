@@ -1,0 +1,19 @@
+[mathjax]
+
+When dealing with systematic uncertainties in physics it's often important to know the relative contributions of each unceratinty to the overall uncertainty.  This script compares all the uncertiaties, assuming they are \(0\%\) correlated.
+
+<h3>Links</h3>
+
+<a href="http://www.aidansean.com/uncertainties_radar">Live page</a>
+<a href="https://github.com/aidansean/uncertainties_radar">GitHub repository</a>
+
+<h3>Overview</h3>
+
+The script arranges the uncertainties by size, then adds the uncertainties in quadrature and then expresses them as a radial distance from the lower left corner, showing the effect of each uncertainty.  This makes it easy to determine where to focus effort in an analysis, and which areas of analysis will not give much benefit in terms of systematic uncertainty reduction.
+
+<h3>Challenges</h3>
+<dl>
+<dt><em>Challenge</em>: The output needs to be clear and easy to read.</dt>
+
+<dd><em>Solution</em>: The code needed to create the relevant geometry is fairly trivial to write.  The only difficult part was adding the labels in such a way that they are all unambiguous and legible.  At the moment the script works, but for a much larger list of systematic unceratinties, the labels may fall outside the plot area. (To be revisited)</dd>
+</dl>
